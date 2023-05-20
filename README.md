@@ -27,6 +27,8 @@ You will first need to create an Are.na application via [this link](https://dev.
 
 Then, enable development mode in chrome://extensions and drag and drop the folder into the browser window to use locally (ideal for testing, iterating or debugging).
 
+One last thing: include the redirect URI (i.e. https://\<extension-id\>.chromiumapp.org/) of the locally installed extension in the Are.na application's settings.
+
 ## Recommended workflow:
 
 1. Create two Are.na channels, one for your likes and one for your bookmarks
