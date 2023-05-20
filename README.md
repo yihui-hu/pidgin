@@ -27,7 +27,7 @@ You will first need to create an Are.na application via [this link](https://dev.
 
 Then, enable development mode in chrome://extensions and drag and drop the folder into the browser window to use locally (ideal for testing, iterating or debugging).
 
-One last thing: include the redirect URI (i.e. https://\<extension-id\>.chromiumapp.org/) of the locally installed extension in the Are.na application's settings.
+One last thing: include the [redirect URI](https://stackoverflow.com/questions/34420459/what-redirect-url-can-i-set-for-oauth2-callback-in-a-chrome-extension) (i.e. https://\<extension-id\>.chromiumapp.org/) of the locally installed extension in the Are.na application's settings.
 
 ## Recommended workflow:
 
@@ -40,7 +40,8 @@ This workflow, I imagine, would be much faster and more convenient than having t
 ## Resources:
 - [Are.na authentication](https://dev.are.na/documentation/authentication)
 - [Getting OAuth2 access tokens in a Chrome extension](https://developer.chrome.com/docs/extensions/reference/identity/)
-- [Fetching blocked by CORS for Chrome extension](https://stackoverflow.com/questions/64732755/access-to-fetch-has-been-blocked-by-cors-policy-chrome-extension-error)
+- [Setting redirect URI for a Chrome extension](https://stackoverflow.com/questions/34420459/what-redirect-url-can-i-set-for-oauth2-callback-in-a-chrome-extension)
+- [Fetching blocked by CORS for a Chrome extension](https://stackoverflow.com/questions/64732755/access-to-fetch-has-been-blocked-by-cors-policy-chrome-extension-error)
 - [Getting a tweet from its ID only](https://stackoverflow.com/a/68430741)
 - [Capturing HTTP requests & responses](https://stackoverflow.com/questions/8939467/chrome-extension-to-read-http-response)
 - [Getting response from an injected XMLHttpRequest script](https://gist.github.com/yihui-hu/43b4c5c45cb2b32cfc7d653a64c5742d)
