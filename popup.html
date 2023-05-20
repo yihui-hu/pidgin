@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Pidgin</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <label for="likesChannel">Are.na channel for liked tweets</label>
-    <input type="text" id="likesChannel" />
-    <label for="bookmarksChannel">Are.na channel for liked tweets</label>
-    <input type="text" id="bookmarksChannel" />
+
+<head>
+  <title>Pidgin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div>
+    <img class="logo" src="./icon.png" />
+
+    <div class="container">
+      <div class="input">
+        <h3>Likes channel</h3>
+        <input type="text" id="likesChannelURL" placeholder="https://are.na/username/likes-channel" />
+      </div>
+      <div class="input">
+        <h3>Bookmarks channel</h3>
+        <input type="text" id="bookmarksChannelURL" placeholder="https://are.na/username/bookmarks-channel" />
+      </div>
+    </div>
+
+    <div class="save">
+      <button id="save">Save channels</button>
+    </div>
 
     <div id="status"></div>
-    <button id="save">Save</button>
+  </div>
 
-    <script src="options.js"></script>
-  </body>
+  <div>
+    <a href="https://github.com/yihui-hu/pidgin" target="_blank">GitHub repo</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
 </html>
