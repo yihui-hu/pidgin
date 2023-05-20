@@ -12,7 +12,7 @@ Pidgin is a Chrome extension that automatically saves liked / bookmarked tweets 
 ## Development:
 
 ```
-example code here
+git clone https://github.com/yihui-hu/pidgin.git
 ```
 
 ## Recommended workflow:
