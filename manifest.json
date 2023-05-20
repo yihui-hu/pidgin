@@ -1,11 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Twitter to Are.na",
+  "name": "Pidgin",
   "version": "1.0",
   "description": "Adds Twitter likes and bookmarks to Are.na channel",
-  "background": {
-    "service_worker": "./background.js"
-  },
   "action":{
     "default_icon":"icon.png",
     "default_popup": "popup.html"
@@ -32,5 +29,5 @@
     "identity",
     "storage"
   ],
-  "host_permissions": ["https://dev.are.na/*"]
+  "host_permissions": ["https://dev.are.na/*", "https://api.are.na/*"]
 }
