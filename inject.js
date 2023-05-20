@@ -18,15 +18,15 @@ document.addEventListener("storeTweetId", function (event) {
   const tweetId = event.detail.tweetId;
   const tweetURL = `https://twitter.com/i/web/status/${tweetId}`
 
-  chrome.storage.local.get(["authToken"], function (items) {
+  chrome.storage.sync.get(["authToken", "likesChannelSlug", "bookmarksChannelSlug"], function (items) {
     const authToken = items.authToken;
 
     if (authToken == null) {
-      console.error("Haven't set up Are.na account. Open extension and log in / authenticate.")
+      console.error("Haven't set up Are.na account.");
     } else {
-      const LIKES_CHANNEL = "twitter-arena-likes-test";
-      const BOOKMARKS_CHANNEL = "twitter-arena-bookmarks-test";
-      const postToArenaURL = `https://api.are.na/v2/channels/${type == "favorite" ? LIKES_CHANNEL : BOOKMARKS_CHANNEL}/blocks?source=${tweetURL}`
+      const LIKES_CHANNEL_SLUG = items.likesChannelSlug ?? "";
+      const BOOKMARKS_CHANNEL_SLUG = items.bookmarksChannelSlug ?? "";
+      const postToArenaURL = `https://api.are.na/v2/channels/${type == "favorite" ? LIKES_CHANNEL_SLUG : BOOKMARKS_CHANNEL_SLUG}/blocks?source=${tweetURL}`
 
       try {
         fetch(postToArenaURL, {
@@ -42,8 +42,8 @@ document.addEventListener("storeTweetId", function (event) {
           console.log(data);
         })
       } catch (err) {
-        console.error("Error posting tweet to Are.na channel.")
-        console.error(err);
+        console.log("Error posting tweet to Are.na channel.")
+        console.log(err);
       }
     }
   });
