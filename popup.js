@@ -123,10 +123,18 @@ const saveOptions = async () => {
         },
         () => {
           status.style.color = "gray";
-          status.textContent = "Are.na channels saved.";
+          if (bookmarksChannelURL == "" && likesChannelURL == "") {
+            status.textContent = "Are.na channels saved. Will not connect liked or bookmarked tweets.";
+          } else if (bookmarksChannelURL == "") {
+            status.textContent = "Are.na channels saved. Will only connect liked tweets."
+          } else if (likesChannelURL == "") {
+            status.textContent = "Are.na channels saved. Will only connect bookmarked tweets."
+          } else {
+            status.textContent = "Are.na channels saved.";
+          }
           setTimeout(() => {
             status.textContent = "";
-          }, 2000);
+          }, 3000);
         }
       );
     } else {
