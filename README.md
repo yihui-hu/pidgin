@@ -16,7 +16,16 @@ Pidgin is a Chrome extension that automatically connects liked and/or bookmarked
 git clone https://github.com/yihui-hu/pidgin.git
 ```
 
-Enable development mode in chrome://extensions and drag and drop the folder into the browser window to use locally (ideal for testing, iterating or debugging).
+You will first need to create an Are.na application via [this link](https://dev.are.na/oauth/applications). Then, create a config.json file in the root directory, providing the client ID and secret of your newly created application:
+```javascript
+// config.json
+{
+    "ARENA_CLIENT_ID": "your_client_id",
+    "ARENA_SECRET": "your_secret"
+}
+```
+
+Then, enable development mode in chrome://extensions and drag and drop the folder into the browser window to use locally (ideal for testing, iterating or debugging).
 
 ## Recommended workflow:
 
