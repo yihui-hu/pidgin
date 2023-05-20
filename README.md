@@ -16,7 +16,7 @@ Pidgin is a Chrome extension that automatically connects liked and/or bookmarked
 git clone https://github.com/yihui-hu/pidgin.git
 ```
 
-Enable development mode in chrome://extensions and drag and drop the folder into the browser window to debug / test.
+Enable development mode in chrome://extensions and drag and drop the folder into the browser window to use locally (ideal for testing, iterating or debugging).
 
 ## Recommended workflow:
 
