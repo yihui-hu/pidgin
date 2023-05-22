@@ -6,8 +6,9 @@
 
 ## Design
 - [x] HTML page for options / auth
+- [x] Inject iframe & match og Are.na extension
 
 ## Documentation
+- [x] Finish README
 - [ ] Clean code
-- [ ] Finish README
 - [ ] Naming parity
