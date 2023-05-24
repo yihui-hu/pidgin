@@ -4,11 +4,11 @@ Pidgin is a Chrome extension that automatically connects liked and/or bookmarked
 
 ## How to use:
 
-1. Download the extension from the Chrome Web Store [here](https://google.com)
-2. Click on the extension in the toolbar and login to your Are.na account 
-3. Click on the extension again and provide the Are.na channel(s) that you want the tweets to connect to
+1. Download the extension from the Chrome Web Store (currently pending review)
+2. Login to your Are.na account 
+3. Provide the Are.na channel(s) that you want the tweets to connect to
 4. You can leave one or both channel inputs blank if you don't wish to connect one or both types of tweets
-5. The extension will now automatically connect tweets to the provided channels when you like and/or bookmark them
+5. The extension will now automatically connect tweets to the provided channels when you like / bookmark them
 
 ## Development:
 
