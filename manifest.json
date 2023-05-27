@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Pidgin",
-  "version": "0.1",
+  "version": "0.1.1",
   "description": "Automatically connect Twitter likes and bookmarks to Are.na channels",
   "icons": {
     "16": "./icons/icon16.png",
